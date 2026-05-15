@@ -1,0 +1,82 @@
+/* ==========================================================================
+   [xs] — SMARTFONLAR (Kichik ekranlar)
+   Ekran kengligi: 0px dan 575px gacha
+   ========================================================================== */
+/* Barcha standart kodlar shu yerga yoziladi, media query shart emas */
+.konteyner {
+  width: 100%;
+  padding: 12px;
+}
+
+/* ==========================================================================
+   [sm] — KATTA SMARTFONLAR / LANDSCAPE TELEFONLAR
+   Ekran kengligi: 576px va undan yuqori
+   ========================================================================== */
+@media screen and (min-width: 576px) {
+  .konteyner {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+}
+
+/* ==========================================================================
+   [md] — PLANSHETLAR
+   Ekran kengligi: 768px va undan yuqori
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+  .konteyner {
+    max-width: 720px;
+  }
+  .ustun {
+    width: 50%; /* Ekran 2 ga bo'linadi */
+  }
+}
+
+/* ==========================================================================
+   [lg] — KATTA PLANSHETLAR / NOUTBUKLAR
+   Ekran kengligi: 992px va undan yuqori
+   ========================================================================== */
+@media screen and (min-width: 992px) {
+  .konteyner {
+    max-width: 960px;
+  }
+  .ustun {
+    width: 33.33%; /* Ekran 3 ga bo'linadi */
+  }
+}
+
+/* ==========================================================================
+   [xl] — STANDART KOMPYUTERLAR / MONITORLAR
+   Ekran kengligi: 1200px va undan yuqori
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+  .konteyner {
+    max-width: 1140px;
+  }
+  .ustun {
+    width: 25%; /* Ekran 4 ga bo'linadi */
+  }
+}
+
+/* ==========================================================================
+   [xxl] — KATTA MONITORLAR
+   Ekran kengligi: 1400px va undan yuqori
+   ========================================================================== */
+@media screen and (min-width: 1400px) {
+  .konteyner {
+    max-width: 1320px;
+  }
+}
+
+/* ==========================================================================
+   [xxxl] — ULTRA KATTA MONITORLAR (Ultra-wide / 2K / 4K)
+   Ekran kengligi: 1600px (yoki 1920px) va undan yuqori
+   ========================================================================== */
+@media screen and (min-width: 1600px) {
+  .konteyner {
+    max-width: 1520px;
+  }
+  body {
+    font-size: 18px; /* Matn o'qilishi qulay bo'lishi uchun */
+  }
+}
